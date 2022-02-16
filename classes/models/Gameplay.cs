@@ -6,14 +6,14 @@ namespace source.classes.models
 {
     public class Gameplay
     {
-        public Player Player1 { get; set; }
-        public Player Player2 { get; set; }
+        public Player[] Players { get; set; }
+    
 
         public Gameplay()
         {
             GameInit();
-            Player1 = new Player(1);
-            Player2 = new Player(2);
+            Players = new Player[]{new Player(1), new Player(2)};
+            
         }
 
         private void GameInit()
@@ -26,8 +26,8 @@ namespace source.classes.models
 
         public void PrintNames()
         {
-            Console.WriteLine(Player1.ToString());
-            Console.WriteLine(Player2.ToString());
+            Console.WriteLine(Players[0].ToString());
+            Console.WriteLine(Players[1].ToString());
         }
 
         public void StartBattle()
@@ -39,8 +39,11 @@ namespace source.classes.models
         public void BattleMain()
         {
             bool isWinner = false;
-            Player attackingPlayer = Player1;
-            Player defendingPlayer = Player2;
+
+            //randomly assigning who goes first
+            int rand = new Random().Next(0,2);
+            Player attackingPlayer = Players[rand];
+            Player defendingPlayer = Players[Math.Abs(rand - 1)];
 
             while(!isWinner)
             {
@@ -53,23 +56,23 @@ namespace source.classes.models
                 //Check if there is a winner
                 int winner = IndexOfWinner();
                 if (winner == 1){
-                    Console.WriteLine(Player1.Name + " is the winner of this game using " + Player1.CharacterSelection.Name);
+                    Console.WriteLine(Players[0].Name + " is the winner of this game using " + Players[0].CharacterSelection.Name);
                     return;
                 }else if (winner == 2)
                 {
-                     Console.WriteLine(Player2.Name + " is the winner of this game using " + Player2.CharacterSelection.Name);
+                     Console.WriteLine(Players[1].Name + " is the winner of this game using " + Players[1].CharacterSelection.Name);
                     return;
                 }
 
                 //SwitchPlayers
-                if (attackingPlayer.ToString() == Player1.ToString())
+                if (attackingPlayer.ToString() == Players[0].ToString())
                 {
-                    attackingPlayer = Player2;
-                    defendingPlayer = Player1;
+                    attackingPlayer = Players[1];
+                    defendingPlayer = Players[0];
                 }
                 else{
-                        attackingPlayer = Player1;
-                        defendingPlayer = Player2;
+                        attackingPlayer = Players[0];
+                        defendingPlayer = Players[1];
                 }
             }
 
@@ -77,8 +80,8 @@ namespace source.classes.models
         //returns 0 if no winner, returns 1 if player one is winner, return 2 if player 2 is winnner
         private int IndexOfWinner()
         {
-            if(Player1.CharacterSelection.Health <= 0) return 2;
-            if(Player2.CharacterSelection.Health <= 0) return 1;
+            if(Players[0].CharacterSelection.Health <= 0) return 2;
+            if(Players[1].CharacterSelection.Health <= 0) return 1;
             return 0;
         }
 
@@ -86,8 +89,8 @@ namespace source.classes.models
         {
             Console.Clear();
             Console.WriteLine("*****************************************************************");
-            Console.WriteLine(Player1.ToString() + "   HEALTH:" + Player1.CharacterSelection.Health);
-            Console.WriteLine(Player2.ToString() + "   HEALTH:" + Player2.CharacterSelection.Health);
+            Console.WriteLine(Players[0].ToString() + "   HEALTH:" + Players[0].CharacterSelection.Health);
+            Console.WriteLine(Players[1].ToString() + "   HEALTH:" + Players[1].CharacterSelection.Health);
             Console.WriteLine("*****************************************************************");
         }
 
