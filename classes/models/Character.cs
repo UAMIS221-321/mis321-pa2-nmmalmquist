@@ -5,7 +5,7 @@ namespace source.classes.models
 {
     public abstract class Character
     {
-        private static Character[] characterList = {new JackSparrow(), new WillTurner(), new DavyJones()};
+        private static Character[] characterList = {new JackSparrow(), new WillTurner(), new DavyJones(), new DirtyDanny(), new SpongeBob()};
 
         public static Character[] GetCharacterList()
         {
