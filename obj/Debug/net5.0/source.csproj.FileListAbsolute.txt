@@ -1,0 +1,16 @@
+C:\Users\nicho\OneDrive\source\repos\MIS321Source\repos\PA2\source\bin\Debug\net5.0\source.exe
+C:\Users\nicho\OneDrive\source\repos\MIS321Source\repos\PA2\source\bin\Debug\net5.0\source.deps.json
+C:\Users\nicho\OneDrive\source\repos\MIS321Source\repos\PA2\source\bin\Debug\net5.0\source.runtimeconfig.json
+C:\Users\nicho\OneDrive\source\repos\MIS321Source\repos\PA2\source\bin\Debug\net5.0\source.runtimeconfig.dev.json
+C:\Users\nicho\OneDrive\source\repos\MIS321Source\repos\PA2\source\bin\Debug\net5.0\source.dll
+C:\Users\nicho\OneDrive\source\repos\MIS321Source\repos\PA2\source\bin\Debug\net5.0\ref\source.dll
+C:\Users\nicho\OneDrive\source\repos\MIS321Source\repos\PA2\source\bin\Debug\net5.0\source.pdb
+C:\Users\nicho\OneDrive\source\repos\MIS321Source\repos\PA2\source\obj\Debug\net5.0\source.csproj.AssemblyReference.cache
+C:\Users\nicho\OneDrive\source\repos\MIS321Source\repos\PA2\source\obj\Debug\net5.0\source.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nicho\OneDrive\source\repos\MIS321Source\repos\PA2\source\obj\Debug\net5.0\source.AssemblyInfoInputs.cache
+C:\Users\nicho\OneDrive\source\repos\MIS321Source\repos\PA2\source\obj\Debug\net5.0\source.AssemblyInfo.cs
+C:\Users\nicho\OneDrive\source\repos\MIS321Source\repos\PA2\source\obj\Debug\net5.0\source.csproj.CoreCompileInputs.cache
+C:\Users\nicho\OneDrive\source\repos\MIS321Source\repos\PA2\source\obj\Debug\net5.0\source.dll
+C:\Users\nicho\OneDrive\source\repos\MIS321Source\repos\PA2\source\obj\Debug\net5.0\ref\source.dll
+C:\Users\nicho\OneDrive\source\repos\MIS321Source\repos\PA2\source\obj\Debug\net5.0\source.pdb
+C:\Users\nicho\OneDrive\source\repos\MIS321Source\repos\PA2\source\obj\Debug\net5.0\source.genruntimeconfig.cache
