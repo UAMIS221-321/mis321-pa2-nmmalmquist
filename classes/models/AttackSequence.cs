@@ -49,11 +49,11 @@ namespace source.classes.models
             {
                 case "p":
                     attackingPower = this.Attacker.CharacterSelection.PrimaryAttackBehavior.Attack(this.Attacker.CharacterSelection.Name, this.Attacker.CharacterSelection.MaxPower);
-                    defendingPower = this.Attacker.CharacterSelection.DefendBehavior.Block(this.Defender.CharacterSelection.Name, this.Defender.CharacterSelection.MaxDefense);
+                    defendingPower = this.Attacker.CharacterSelection.DefendBehavior.Defend(this.Defender.CharacterSelection.Name, this.Defender.CharacterSelection.MaxDefense);
                     break;
                 case "s":
                     attackingPower = this.Attacker.CharacterSelection.SecondaryAttackBehavior.Attack(this.Attacker.CharacterSelection.Name, this.Attacker.CharacterSelection.MaxPower);
-                    defendingPower = this.Attacker.CharacterSelection.DefendBehavior.Block(this.Defender.CharacterSelection.Name, this.Defender.CharacterSelection.MaxDefense);
+                    defendingPower = this.Attacker.CharacterSelection.DefendBehavior.Defend(this.Defender.CharacterSelection.Name, this.Defender.CharacterSelection.MaxDefense);
                     break;
             }
             //this eliminates the problem of negative numbers where the defense is higher than the attacking. we don't want to add health points.

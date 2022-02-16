@@ -24,11 +24,6 @@ namespace source.classes.models
             Console.ReadKey();
         }
 
-        public void PrintNames()
-        {
-            Console.WriteLine(Players[0].ToString());
-            Console.WriteLine(Players[1].ToString());
-        }
 
         public void StartBattle()
         {
